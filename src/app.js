@@ -112,5 +112,5 @@ app.get('/whether',(req,res)=>{
 })*/
 
  app.listen(port,()=>{
-     console.log('server in up on port 3000')
+     console.log('server in up on port '+port)
  })
