@@ -29,7 +29,8 @@ const forecast = (latitude,longitude,callback) =>{
         }else if (response.body.error){
             callback('Unable to find location!',undefined)
         }else{
-            callback(undefined,'Here temperature is '+ response.body.currently.temperature+ ' and it looks '+ response.body.daily.data[0].summary
+            //'Here temperature is '+ response.body.currently.temperature+ ' and 
+            callback(undefined,'It looks '+ response.body.daily.data[0].summary
             )
         }
     })
