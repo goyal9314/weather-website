@@ -23,7 +23,7 @@ app.use(express.static(publicDirectorypath))
 //for dynamic
 app.get('',(req,res)=>{
     res.render('index.hbs',{
-        title:'Whether app',
+        title:'Weather app',
         name:'Neeraj Goyal'
     })
 })
